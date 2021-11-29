@@ -1,0 +1,238 @@
+/* some fixes*/
+.btn-a {
+    margin-top: 18px;
+}
+
+.edit-spacing {
+    margin-top: 25px;
+}
+
+.wrap {
+    word-wrap: break-word;
+}
+
+/* back ground make the class name BODY to make it work*/
+.body-background {
+    background: url('../img/abstract.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    -o-background-size: 100% 100%;
+    background-size: 100% 100%;
+}
+
+.btn-spacing {
+    margin-top: 10px;
+}
+
+.container-spacing {
+    margin-top: 80px;
+    min-height: 100%;
+    height: 100%;
+    padding-bottom: 60px;
+}
+
+/* styling the menu nav */
+.hover-color:hover {
+    background-color: #663399;
+    color:gray;
+    text-shadow: 2px gray;
+    border-radius: 20px;
+}
+/* end of styling the menu nav*/
+/* style the image before and after upload in the profile page*/
+.avatar {
+    width: 150px;
+    height: 150px;
+    float: left;
+    border-radius: 50%;
+    margin-right: 25px;
+}
+
+/* resizing the nav-profile picture*/
+.nav-profile {
+    width: 32px;
+    height: 32px;
+}
+
+                    /* Fix the Tag and user index with the class card */
+                    @media (min-width: 34em) {
+                        .card-columns {
+                            -webkit-column-count: 2;
+                            -moz-column-count: 2;
+                            column-count: 2;
+                        }
+                    }
+
+                    @media (min-width: 48em) {
+                        .card-columns {
+                            -webkit-column-count: 3;
+                            -moz-column-count: 3;
+                            column-count: 3;
+                        }
+                    }
+
+                    @media (min-width: 62em) {
+                        .card-columns {
+                            -webkit-column-count: 4;
+                            -moz-column-count: 4;
+                            column-count: 4;
+                        }
+                    }
+
+                    @media (min-width: 75em) {
+                        .card-columns {
+                            -webkit-column-count: 5;
+                            -moz-column-count: 5;
+                            column-count: 5;
+                        }
+                    }
+                    /*end of fixing Tag index*/
+/* Styling the comment section*/
+.comment-style {
+    background-color: #ffffff;
+    border: solid 2px rgb(206, 208, 212);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.comment-style2 {
+    background-color: #eeeeee;
+    border-radius: 20px;
+}
+
+/* styling the single user page*/
+.single-user-img {
+    border: solid 2px rgb(206, 208, 212);
+}
+
+.show-user {
+    border-bottom: solid 2px rebeccapurple;
+}
+
+.show-user:hover {
+    border-left: solid 2px rebeccapurple;
+    border-right: solid 2px rebeccapurple;
+}
+
+
+.single-user-page {
+    border: solid 1px rgba(212, 212, 212, 0.58);
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding-bottom: 22px
+}
+/* end of styling single user page*/
+/* general styling*/
+a:hover {
+    text-decoration: none;
+    color: rgba(102, 51, 153, 0.55);
+}
+/*styling the nav item*/
+.navbar > div > ul > li a:hover {
+    color: #663399;
+    text-shadow: 2px gray;
+} 
+.nav-hover-2 {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  font-family: Arial;
+  font-weight: bold;
+  padding: 0 0  0;
+}
+
+.nav-hover-2:after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  visibility: hidden;
+  background-color:#663399;
+  -webkit-transition: all .1s ease;
+  transition: all 0.3s ease;  
+  -webkit-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.nav-hover-2:hover:after {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  transform: scaleX(1);
+}
+/*end of styling the nav item*/
+
+/* random fixes*/
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rebeccapurple;
+    margin: 1em 0;
+    padding: 0;
+}
+.about{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+/*Welcome jumbotron*/
+.jumbotron-guest {
+    /*    background-image: url("../img/abstract.jpg");*/
+    background: -moz-linear-gradient(090deg, rgba(255,255,255,0) 0%, rgba(100,100,100,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(100,100,100,1)), color-stop(100%, rgba(255,255,255,0))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(090deg, rgba(255,255,255,0) 0%, rgba(100,100,100,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(090deg, rgba(255,255,255,0) 0%, rgba(100,100,100,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(090deg, rgba(255,255,255,0) 0%, rgba(100,100,100,1) 100%); /* ie10+ */
+    background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(100,100,100,1) 100%); /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#663399', endColorstr='#FFFFFF',GradientType=0 );
+    margin-bottom: 0;
+    min-height: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    border-radius: 40px;
+}
+.navbar-brand-logo {
+    position: relative;
+    width: 170px;
+    left: 15px;
+    background-size: contain;
+}
+/* Styling the footer*/
+.footer{
+    background: #663399 ;
+    border-bottom: 5px solid #663399;
+    border-top: 10px solid #fff;
+    text-align: center;
+    color: #cce5ff;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 0;
+    line-height: 16px;
+    clear: both;
+    height: 60px;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/*TEsting*/
+.navbar-nav li.active > a {
+  background-color: rebeccapurple;
+  border-radius: 10px;
+}
+.border-fix{
+  border-bottom: solid 2px gray;
+  border-left: solid 2px gray;
+  border-right: solid 2px gray;
+  padding-left: 7%;
+  padding-right: 7%;
+}
